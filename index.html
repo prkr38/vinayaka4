@@ -37,7 +37,7 @@
 
     window.onload = function () {
       window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container', {
-        size: 'normal',
+        size: 'invisible',
         callback: function(response) {
           console.log("reCAPTCHA verified");
         }
@@ -68,3 +68,4 @@
   </script>
 </body>
 </html>
+
